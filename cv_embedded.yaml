@@ -1,0 +1,79 @@
+# Embedded / hardware / low-level software variant.
+# Render with: rendercv render cv_embedded.yaml
+cv:
+  name: Abilaesh Kandiah
+  headline: MEng Student, Electrical & Computer Engineering | Embedded Systems & IoT
+  location: Toronto, CA
+  email: abikandiah@gmail.com
+  phone: "+14168288984"
+  website: https://akandiah.ca
+  social_networks:
+    - network: LinkedIn
+      username: abilaesh-kandiah-58b3b2ba
+    - network: GitHub
+      username: abikandiah
+  sections:
+    summary:
+      - "Software engineer with 7 years of experience building multi-threaded backend services and high-throughput data transfer, now pursuing an MEng in Electrical & Computer Engineering focused on embedded systems and IoT. Core developer through a successful acquisition by Nuix."
+
+    education:
+      - institution: University of Toronto
+        area: Electrical & Computer Engineering
+        degree: MEng
+        start_date: 2026-09
+        end_date: present
+        location: Toronto
+        highlights:
+          - "Coursework: Rust, FPGA Design, Electromagnetic Compatibility" # TODO: confirm; add Winter courses once enrolled
+      - institution: Toronto Metropolitan University
+        area: Computer Engineering
+        degree: BEng
+        start_date: 2014-09
+        end_date: 2018-04
+        location: Toronto
+
+    # PROJECTS: uncomment and fill in with REAL projects only. Describe what you built,
+    # not what you plan to build. Two or three entries is plenty. For embedded roles this
+    # is probably the most important section on the page.
+    # projects:
+    #   - name: <FPGA course project / firmware or dev-board project / capstone once underway>
+    #     date: 2026-12
+    #     highlights:
+    #       - "<what you built, with hardware/tools used>"
+    #       - "<a measurable result or a hard problem you solved>"
+
+    experience:
+      - company: Rampiva (acquired by Nuix, 2023)
+        position: Senior Software Engineer
+        start_date: 2018-08
+        end_date: 2025-02
+        location: Remote / Toronto
+        summary: "Core full-stack developer on a Java and React platform; reported data processing throughput gains of over 350%."
+        highlights:
+          - "**Data Upload:** Architected a resumable upload system on the tus protocol using direct Java ByteBuffers, larger cache sizes and separate threads for reads, writes and file hash calculations. Achieved stable 500 Mb/s across distant locations, with uploads of up to 1 TB and more."
+          - "**Multi-Threaded Service:** Designed and implemented a full-stack legal hold notification system with a multi-threaded execution engine (thread pools, stateful tasks), normalized relational schemas, SSO links, M365 and LDAP user synchronization and user-provided SMTP support."
+          - "**Third-Party Integrations:** Pioneered a standardized framework for third-party integrations (abstract ORM and RESTful API resource patterns; OIDC, username and password and API key authentication; exponential back-off and rate limiting), enabling over 10 integrations including the Microsoft Purview and Google Vault collectors."
+          - "**Troubleshooting & Security:** Debugged internal and client-facing issues using network debuggers, stack traces and debug logs. Managed core code repositories and mitigated vulnerabilities identified via Snyk and Sonar."
+          - "**Testing & CI/CD:** Structured a Selenium end-to-end suite (200+ tests) in a Jenkins CI/CD pipeline."
+          - "**Front-end:** Led development of multiple React applications, including the core Automate web application, with a modular component library, i18next internationalization, WCAG accessibility, virtual rendering for large datasets and Web Workers for intensive computation."
+          - "**Form Builder:** Spearheaded a Java-to-React form builder that uses reflection and class annotations to generate 200+ operation forms."
+          - "**Mentorship:** Mentored junior and intermediate developers via code reviews, design debates and pairing."
+
+    technical_skills:
+      - label: Languages
+        details: C/C++, Rust, Python, Java, Go, JavaScript, TypeScript, SQL, GraphQL, HTML/CSS, Shell (Linux)
+      - label: Systems
+        details: Multi-threading and Concurrency, Memory Management, Operating Systems, Computer Architecture, Computer Networks, Encryption # TODO: add embedded items (protocols, RTOS, tools) ONLY if used in real work or coursework
+      - label: Tools & Debugging
+        details: Git, Wireshark, Fiddler, Docker, Jenkins (CI/CD), Selenium, JUnit, Snyk, Sonar
+      - label: Web & Cloud
+        details: React, Redux, Redux-Saga, Dropwizard, Spring, Node, AWS, Azure, GCP, Cloudflare
+
+design:
+  theme: engineeringresumes
+  page:
+    top_margin: 0.5in
+    bottom_margin: 0.5in
+    show_top_note: false
+  typography:
+    alignment: left
