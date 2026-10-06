@@ -45,8 +45,7 @@ Re-renders on every save (check `rendercv render --help` for the exact flag in y
 One YAML file per target role, e.g.:
 
 - `cv_software.yaml` — software roles (current baseline)
-- `cv_embedded.yaml` — copy of the above, then rewrite the summary, add the MEng entry,
-  and reorder or trim projects (e.g. for the ECE2500Y capstone application)
+- `cv_embedded.yaml` — embedded roles
 
 ## Pinning the version
 

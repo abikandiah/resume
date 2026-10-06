@@ -1,4 +1,4 @@
-# Software-focused resume (faithful conversion of the original PDF).
+# Software-focused resume: senior full-stack positioning (tidied).
 # Render with: rendercv render cv_software.yaml
 cv:
   name: Abilaesh Kandiah
@@ -7,84 +7,65 @@ cv:
   email: abikandiah@gmail.com
   phone: "+14168288984"
   website: https://akandiah.ca
+  social_networks:
+    - network: LinkedIn
+      username: abilaesh-kandiah-58b3b2ba
+    - network: GitHub
+      username: abikandiah
   sections:
     summary:
-      - "Senior software engineer with 7 years of experience architecting workflow automation systems and full-stack services. Proven track record in dynamic startup environments, serving as a core developer through a successful acquisition by Nuix. Expert in multi-threaded Java services, asynchronous task execution and scalable React architectures. Seeking a leadership role to mentor engineering teams and deliver innovative, enterprise-grade software solutions."
+      - "Software engineer with 7 years of experience building workflow automation systems end-to-end, from multi-threaded backend services to the React interfaces on top of them. Core developer through a successful acquisition by Nuix. Now pursuing an MEng in Electrical & Computer Engineering, focused on embedded systems."
+
+    experience:
+      - company: Rampiva (acquired by Nuix, 2023)
+        position: Senior Software Engineer
+        start_date: 2018-08
+        end_date: 2025-02
+        location: Remote / Toronto
+        summary: "Core full-stack developer on a Java and React platform; reported data processing throughput gains of over 350%."
+        highlights:
+          - "**Front-end Architecture:** Led development of multiple React applications, including the core Automate web application. Designed a modular component library with i18next internationalization and WCAG accessibility."
+          - "**Front-end Performance & Security:** Built virtual rendering for large datasets, Web Workers for intensive computation, localized caching, OIDC authentication and automated token refresh."
+          - "**Multi-Threaded Service:** Designed and implemented a full-stack legal hold notification system with a multi-threaded execution engine (thread pools, stateful tasks), normalized relational schemas, SSO links, M365 and LDAP user synchronization and user-provided SMTP support."
+          - "**Form Builder:** Spearheaded a Java-to-React form builder that uses reflection and class annotations to generate 200+ operation forms, including input lists, tables and nested object forms via recursion, significantly reducing front-end development time and maintenance."
+          - "**Data Upload:** Architected a resumable upload system on the tus protocol using direct Java ByteBuffers, larger cache sizes and separate threads for reads, writes and file hash calculations. Achieved stable 500 Mb/s across distant locations, with uploads of up to 1 TB and more."
+          - "**Third-Party Integrations:** Pioneered a standardized framework for third-party integrations (abstract ORM and RESTful API resource patterns; OIDC, username and password and API key authentication; exponential back-off and rate limiting), enabling over 10 integrations including the Microsoft Purview and Google Vault collectors."
+          - "**Testing & CI/CD:** Structured a Selenium end-to-end suite (200+ tests) in a Jenkins CI/CD pipeline."
+          - "**Mentorship:** Mentored junior and intermediate developers via code reviews, design debates and pairing."
+          - "**Troubleshooting & Security:** Debugged internal and client-facing issues using network debuggers, stack traces and debug logs. Managed core code repositories and mitigated vulnerabilities identified via Snyk and Sonar."
+
+    technical_skills:
+      - label: Languages
+        details: Java, JavaScript, TypeScript, Python, Rust, Go, C/C++, SQL, GraphQL, HTML/CSS, Shell
+      - label: Frameworks
+        details: React, Redux, Redux-Saga, Dropwizard, Spring, Node
+      - label: Cloud & DevOps
+        details: AWS, Azure, GCP, Cloudflare, Docker, Jenkins (CI/CD), Git, Snyk, Sonar
+      - label: Testing & Debugging
+        details: Selenium, JUnit, Fiddler, Wireshark
+      - label: Architecture
+        details: System Design, Multi-threading and Concurrency, REST API Design, OIDC / SSO Authentication, Caching, Relational Schema Design, Memory Management
 
     education:
-      - institution: Toronto Metropolitan University (formerly Ryerson University)
+      - institution: University of Toronto
+        area: Electrical & Computer Engineering
+        degree: MEng
+        start_date: 2026-09
+        end_date: present
+        location: Toronto
+
+      - institution: Toronto Metropolitan University
         area: Computer Engineering
         degree: BEng
         start_date: 2014-09
         end_date: 2018-04
-        location: Toronto, CA
-
-    experience:
-      - company: Rampiva (acquired by Nuix, July 2023)
-        position: Senior Software Engineer
-        start_date: 2018-08
-        end_date: 2025-02
-        location: Remote / Toronto, CA
-        summary: "Served as a core full-stack developer on the Java and React-based workflow automation platform that significantly improved data processing throughput, with reported improvements of over 350%."
-        highlights:
-          - "**Front-end Systems Architecture:** Led the development of multiple React web applications, designing modular component libraries and ensuring system-wide compliance with internationalization (i18next) and WCAG accessibility standards."
-          - "**Technical Mentorship:** Mentored junior and intermediate developers through code reviews, design debates and pair programming to uphold code standards and engineering best practices."
-          - "**High-Speed Data Upload:** Architected a resumable data upload system utilizing Java ByteBuffers to achieve stable 500 Mb/s speeds, enabling clients to process TB-scale datasets."
-          - "**Multi-Threaded Service:** Designed and implemented a full-stack legal hold notification engine utilizing thread pools and stateful task management to handle concurrent workloads."
-          - "**Internal Automation Tool:** Spearheaded the development of a Java-to-React form builder that used reflection and class annotations to programmatically generate 200+ operation forms, significantly reducing front-end development time."
-          - "**Automated E2E Tests:** Structured a comprehensive Selenium end-to-end testing suite (200+ tests) integrated into a Jenkins CI/CD pipeline to ensure system reliability."
-          - "**Third-Party Integrations:** Researched and developed automated integrations for Google and Microsoft eDiscovery platforms, managing OIDC authentication and end-to-end data preservation and collection logic."
-          - "**Systems Troubleshooting:** Performed deep-level debugging of internal and client-facing issues using network debuggers, stack trace analysis and debug logs to maintain high system availability."
-          - "**Security & Lifecycle Management:** Managed core code repositories and mitigated security vulnerabilities identified via Snyk and Sonar to maintain enterprise-grade software integrity."
-
-    technical_skills:
-      - label: Languages
-        details: Java, JavaScript, TypeScript, Python, Go, C/C++, Shell (Linux), SQL, GraphQL, HTML/CSS
-      - label: Cloud & Infrastructure
-        details: AWS, Azure, Cloudflare, GCP, Jenkins (CI/CD), Docker (Containers), Virtual Machines, Snyk, Sonar
-      - label: Tools & Frameworks
-        details: React, Redux, Sagas, Dropwizard, Spring, Selenium, JUnit, Node, Git, AI, Cursor, Fiddler, Wireshark
-      - label: Engineering Foundations
-        details: Multi-threading, Concurrent Processing, Memory Management, Data Streams, Encryption, System Design, Caching, Message Queues, Computer Architecture, Operating Systems, Computer Networks and Security
-
-    key_projects:
-      - name: Data Upload via tus
-        highlights:
-          - "Engineered data upload support to the Automate web application by customizing and integrating open source projects based on the tus resumable file upload protocol."
-          - "Optimized file system write operations over network shares by implementing direct Java ByteBuffers, increasing cache sizes and using separate threads for reads, writes and file hash calculations."
-          - "Achieved stable data transfer rates exceeding 500 Mb/s across distant geographical locations, supporting file uploads of up to 1 TB and more."
-
-      - name: Automate Web Application
-        highlights:
-          - "Spearheaded and sustained the core React front-end web application for the Automate platform, utilizing Redux and Redux-Sagas to manage complex, asynchronous side effects and system states."
-          - "Designed a modular component library based on composition patterns for re-usability, integrated with i18next internationalization and WCAG accessibility standards for global deployment."
-          - "Engineered high-performance solutions including virtual rendering to handle large datasets efficiently and Web Worker scripts to offload intensive computations from the main execution thread."
-          - "Implemented advanced features including localized caching strategies, OIDC-based authentication and automated token refresh cycles to ensure system security and reliability."
-
-      - name: Third-Party Services Framework
-        highlights:
-          - "Pioneered a standardized architectural framework for third-party service integration, utilizing abstract design patterns for Object-Relational Mapping (ORM) and RESTful API resources."
-          - "Developed a modular authentication and authorization feature supporting diverse mechanisms including OIDC, username and password and API keys."
-          - "Implemented robust error handling including exponential back-offs and API rate-limiting."
-          - "Facilitated the rapid deployment of over 10 enterprise-grade integrations, including the Microsoft Purview and Google Vault collectors."
-
-      - name: Microsoft eDiscovery & Google Vault Collector
-        highlights:
-          - "Researched and implemented automated data preservation and collection workflows by interfacing with Microsoft Purview and Google Vault via RESTful APIs and OIDC authentication protocols."
-          - "Supported connections to user-defined M365 and Google Workspace environments via configurations."
-
-      - name: Java-to-React Form Builder
-        highlights:
-          - "Implemented a tool to auto-generate React forms based on Java class and field annotations, removing frontend development time and maintenance."
-          - "Supported complex components such as input lists, tables and nested object forms via recursion, as well as grid layouts, labels, custom styles and borders."
-
-      - name: Legal Hold Notifications
-        highlights:
-          - "Orchestrated the end-to-end build of a legal hold notification system within the Automate product."
-          - "Implemented normalized relational schemas to ensure data integrity and system reliability."
-          - "Engineered a multi-threaded execution engine utilizing thread pools and stateful tasks to manage high-concurrency workloads."
-          - "Built support for single-sign on (SSO) links and synchronization of users from M365 and LDAP user directories."
-          - "Supported connections to user-provided SMTP servers for sending email notifications."
+        location: Toronto
 
 design:
   theme: engineeringresumes
+  page:
+    top_margin: 0.5in
+    bottom_margin: 0.5in
+    show_top_note: false
+  typography:
+    alignment: left
