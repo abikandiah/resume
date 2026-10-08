@@ -1,8 +1,8 @@
-# Embedded / IoT variant (startup and R&D teams).
-# Render with: rendercv render cv_embedded.yaml
+# MEng capstone (ECE2500Y) application variant.
+# Render with: rendercv render cv_capstone.yaml
 cv:
   name: Abilaesh Kandiah
-  headline: Senior Software Engineer | Embedded Systems & IoT Security 
+  headline: MEng Student, Electrical & Computer Engineering | Embedded Systems & IoT
   location: Toronto, CA
   email: abikandiah@gmail.com
   phone: "+14168288984"
@@ -14,7 +14,7 @@ cv:
       username: abikandiah
   sections:
     summary:
-      - "Senior software engineer with 7 years of owning full-stack systems end to end, from design and implementation through CI/CD and production debugging, now moving into embedded systems and IoT security through an MEng at the University of Toronto. Looking to join a small hardware team where I can work across firmware, secure updates and device-to-cloud infrastructure."
+      - "Senior software engineer with 7 years of experience building multi-threaded backend services and high-throughput data transfer, now pursuing an MEng in Electrical & Computer Engineering focused on embedded systems and IoT security. Seeking hands-on work in firmware, secure device software and IoT systems."
 
     education:
       - institution: University of Toronto
@@ -34,8 +34,6 @@ cv:
 
     # PROJECTS: leave commented out unless you have a REAL embedded project to show.
     # Describe what you built, not what you plan to build.
-    # For startups this is the highest-value section once it exists: a board, an MCU, a protocol,
-    # a measured result, and a repo link with a clear README.
     # projects:
     #   - name: <project name>
     #     date: 2026-12
@@ -49,7 +47,7 @@ cv:
         start_date: 2025-02
         end_date: 2026-08
         location: Toronto
-
+        
       - company: Rampiva (acquired by Nuix, 2023)
         position: Senior Software Engineer
         start_date: 2018-08
@@ -58,22 +56,22 @@ cv:
         summary: "Core full-stack developer on a Java and React platform; reported data processing throughput gains of over 350%."
         highlights:
           - "**Resumable Data Transfer:** Architected a resumable upload system on the tus protocol using direct Java ByteBuffers, larger cache sizes and separate threads for reads, writes and file hash calculations to verify integrity after upload. Achieved stable 500 Mb/s across distant locations, with uploads of up to 1 TB and more."
-          - "**Third-Party Integrations:** Pioneered a standardized framework for third-party integrations (OIDC, username and password and API key authentication; exponential back-off and rate limiting; abstract ORM and RESTful API resource patterns), enabling over 10 integrations including the Microsoft Purview and Google Vault collectors."
+          - "**Third-Party Integrations:** Pioneered a standardized framework for third-party integrations (abstract ORM and RESTful API resource patterns; OIDC, username and password and API key authentication; exponential back-off and rate limiting), enabling over 10 integrations including the Microsoft Purview and Google Vault collectors."
           - "**Troubleshooting & Security:** Debugged internal and client-facing issues using network debuggers, stack traces and debug logs. Managed core code repositories and mitigated vulnerabilities identified via Snyk and Sonar."
           - "**Multi-Threaded Service:** Designed and implemented a full-stack legal hold notification system with a multi-threaded execution engine (thread pools, stateful tasks), normalized relational schemas, SSO, M365 and LDAP user synchronization, and user-provided SMTP support."
           - "**Testing & CI/CD:** Structured a Selenium end-to-end test suite (200+ tests) in a Jenkins CI/CD pipeline."
+          - "**Front-end:** Led development of multiple React applications, including the core Automate web application, with a modular component library, i18next internationalization, WCAG accessibility, virtual rendering for large datasets, and Web Workers for intensive computation."
           - "**Mentorship:** Mentored junior and intermediate developers via code reviews, design debates and pairing."
-          - "**Front-end:** Led development of multiple React applications, including the core Automate web application, with a shared component library, i18next internationalization and WCAG accessibility."
 
     technical_skills:
       - label: Languages
-        details: C/C++, Rust, Python, Java, Go, Shell (Linux), SQL, JavaScript, TypeScript
+        details: C/C++, Rust, Java, JavaScript, TypeScript, Python, Go, SQL, GraphQL, HTML/CSS, Shell (Linux)
       - label: Systems
         details: Multi-threading and Concurrency, Memory Management, Operating Systems, Computer Architecture, Computer Networks, Encryption # TODO: add embedded items (protocols, RTOS, tools) ONLY if used in real work or coursework
       - label: Tools & Debugging
-        details: Git, Wireshark, Docker, Jenkins (CI/CD), Snyk, Sonar, Selenium, JUnit
+        details: Git, Wireshark, Fiddler, Docker, Jenkins (CI/CD), Selenium, JUnit, Snyk, Sonar
       - label: Web & Cloud
-        details: AWS, Azure, GCP, Cloudflare, React, Spring, Dropwizard, Node
+        details: React, Dropwizard, Spring, Node, AWS, Azure, GCP, Cloudflare
 
 design:
   theme: engineeringresumes
